@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HORARI</title>
     <style>
-        body {
-            background-color: grey;
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titillium+Web&display=swap');
+        :root {
+            --empresa: #fcfc65;
+            --Eclient: #f56f6f;
+            --Eservidor: #faac45;
+            --Daplicacio: #29f3c7;
+            --Dinterficie: rgb(161, 245, 106);
+
         }
-        .modul, .dia {
+
+        h1 {
+            text-shadow: 1px 1px 2px yellow; 
+            font-family: 'Press Start 2P', cursive;
             text-align: center;
         }
+
+        body {
+            background-color: #80808075;
+        }
+
+        .modul,
+        .dia {
+            text-align: center;
+
+        }
+
         table {
             border-collapse: collapse;
             width: 100%;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
+
+        th,
+        td {
+            border: 3px solid black;
+            padding: 10px;
+
         }
+
         th {
-            background-color: lightgray;
+            background-color: #191919;
+            color: #ffbf00;
+            text-shadow: 3px 2px 3px #1bfd39;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 15px;
         }
-        
+
+        .hora {
+            background-color: #191919;
+            color: #ffbf00;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 10px;
+            text-shadow: 3px 2px 3px #1bfd39;
+        }
+
+        .EIE {
+            background-color: var(--empresa);
+        }
+
+        .DPLGWEB {
+            background-color: var(--Daplicacio);
+        }
+
+        .DWES {
+            background-color: var(--Eservidor);
+        }
+
+        .DWEC {
+            background-color: var(--Eclient);
+        }
+
+        .DIW {
+            background-color: var(--Dinterficie);
+        }
     </style>
 </head>
+
 <body>
-    <h1>2n CFGS</h1>
+    <h1>2n DESENVOLUPAMENT D'APLICACIONS WEB</h1>
     <main>
         <table>
             <tr class="dia">
@@ -38,15 +95,41 @@
                 <th>Divendres</th>
             </tr>
             <tr class="modul">
-                <td>15:00</td>
-                <td>Empresa</td>
-                <td>Desplegament</td>
-                <td>Empresa</td>
-                <td>Empresa</td>
-                <td>Empresa</td>
+                <td class="hora">15:00</td>
+                <td class="EIE">Empresa i iniciativa emprenedora <br>SANTI BONILLO</td>
+                <td class="EIE" rowspan="2">Empresa i iniciativa emprenedora <br>SANTI BONILLO</td>
+                <td class="DPLGWEB">Desplegament d'aplicacions web <br>MANUEL MARTINEZ</td>
+                <td class="DWES" rowspan="2">Desenvolupament web en entorn servidor <br>PERE NEGRE</td>
+                <td class="DWES" rowspan="4">Desenvolupament web en entorn servidor <br>PERE NEGRE</td>
+            </tr>
+            <tr class="modul">
+                <td class="hora">15:55</td>
+                <td class="DWEC" rowspan="2">Desenvolupament web en entorn client <br>ARTEM RUDENKO</td>
+                <td class="DIW" rowspan="2">Disseny d'interficies web <br>ARTEM RUDENKO</td>
+            </tr>
+            <tr class="modul">
+                <td class="hora">16:50</td>
+                <td class="DWEC" rowspan="2">Desenvolupament web en entorn client <br>ARTEM RUDENKO</td>
+                <td class="DPLGWEB" rowspan="2">Desplegament d'aplicacions web <br>MANUEL MARTINEZ</td>
+            </tr>
+            <tr class="modul">
+                <td class="hora">18:15</td>
+                <td class="DWES">Desenvolupament web en entorn servidor <br>PERE NEGRE</td>
+                <td class="DWES" rowspan="3">Desenvolupament web en entorn servidor <br>PERE NEGRE</td>
+            </tr>
+            <tr class="modul">
+                <td class="hora">19:10</td>
+                <td class="DPLGWEB" rowspan="2">Desplegament d'aplicacions web <br>MANUEL MARTINEZ</td>
+                <td class="DIW" rowspan="2">Disseny d'interficies web <br>ARTEM RUDENKO</td>
+                <td class="DIW" rowspan="2">Disseny d'interficies web <br>ARTEM RUDENKO</td>
+                <td class="DWEC " rowspan="2">Desenvolupament web en entorn client <br>ARTEM RUDENKO</td>
+            </tr>
+            <tr class="modul">
+                <td class="hora">20:05</td>
             </tr>
         </table>
     </main>
-    
+
 </body>
+
 </html>
