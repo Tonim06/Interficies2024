@@ -5,81 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HORARI</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titillium+Web&display=swap');
-        :root {
-            --empresa: #fcfc65;
-            --Eclient: #f56f6f;
-            --Eservidor: #faac45;
-            --Daplicacio: #29f3c7;
-            --Dinterficie: rgb(161, 245, 106);
+    <style>@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Titillium+Web&display=swap";
+:root {
+  --empresa: #fcfc65;
+  --Eclient: #f56f6f;
+  --Eservidor: #faac45;
+  --Daplicacio: #29f3c7;
+  --Dinterficie: #a1f56a;
+}
 
-        }
+h1 {
+  text-shadow: 1px 1px 2px #ff0;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+}
 
-        h1 {
-            text-shadow: 1px 1px 2px yellow; 
-            font-family: 'Press Start 2P', cursive;
-            text-align: center;
-        }
+body {
+  background-color: #80808075;
+}
 
-        body {
-            background-color: #80808075;
-        }
+.modul, .dia {
+  text-align: center;
+}
 
-        .modul,
-        .dia {
-            text-align: center;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-        }
+th, td {
+  border: 3px solid #000;
+  padding: 10px;
+}
 
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
+th {
+  color: #ffbf00;
+  text-shadow: 3px 2px 3px #1bfd39;
+  background-color: #191919;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+}
 
-        th,
-        td {
-            border: 3px solid black;
-            padding: 10px;
+.hora {
+  color: #ffbf00;
+  text-shadow: 3px 2px 3px #1bfd39;
+  background-color: #191919;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+}
 
-        }
+.EIE {
+  background-color: var(--empresa);
+}
 
-        th {
-            background-color: #191919;
-            color: #ffbf00;
-            text-shadow: 3px 2px 3px #1bfd39;
-            font-family: 'Press Start 2P', cursive;
-            font-size: 15px;
-        }
+.DPLGWEB {
+  background-color: var(--Daplicacio);
+}
 
-        .hora {
-            background-color: #191919;
-            color: #ffbf00;
-            font-family: 'Press Start 2P', cursive;
-            font-size: 10px;
-            text-shadow: 3px 2px 3px #1bfd39;
-        }
+.DWES {
+  background-color: var(--Eservidor);
+}
 
-        .EIE {
-            background-color: var(--empresa);
-        }
+.DWEC {
+  background-color: var(--Eclient);
+}
 
-        .DPLGWEB {
-            background-color: var(--Daplicacio);
-        }
+.DIW {
+  background-color: var(--Dinterficie);
+}
 
-        .DWES {
-            background-color: var(--Eservidor);
-        }
-
-        .DWEC {
-            background-color: var(--Eclient);
-        }
-
-        .DIW {
-            background-color: var(--Dinterficie);
-        }
-    </style>
+</style>
 </head>
 
 <body>
@@ -130,6 +125,6 @@
         </table>
     </main>
 
-</body>
+<script src="/horari.61b21aa5.js"></script></body>
 
 </html>
