@@ -9,36 +9,67 @@
     <script src="https://kit.fontawesome.com/3090488b50.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="#" class="logo">
-                    <img src="../IMG/logo.png" alt="">
-                    <span class="nav-item">Toni Montero</span>
-                </a>
-            </li>
-            <li><a href="#">
-                <i class="fa-solid fa-house"></i>
-                <span class="nav-item">Home</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-circle-info"></i>
-                <span class="nav-item">About Me</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-list-check"></i>
-                <span class="nav-item">Skills</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-folder-open"></i>
-                <span class="nav-item">Projects</span>
-            </a></li>
-            <li><a href="#">
-                <i class="fa-solid fa-address-book"></i>
-                <span class="nav-item">Contact Me</span>
-            </a></li>
-        </ul>
-    </nav>
-    
+   <!-- MAIN CONTAINER START -->
+    <div class="main-container">
+        <!-- ASIDE START -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>T</span>oni</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#" class="active"><i class="fa fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-circle-info"></i>About</a></li>
+                <li><a href="#"><i class="fa fa-list-check"></i>Skills</a></li>
+                <li><a href="#"><i class="fa fa-folder-open"></i>Projects</a></li>
+                <li><a href="#"><i class="fa fa-address-book"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- ASIDE END -->
+        <!-- MAIN CONTENT START-->
+        <div class="main-content">
+            <!-- HOME SECTION START-->
+            <section class="home section">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Toni Montero</span></h3>
+                            <h3 class="my-profession">I' m a <span class="typing">Web developer</span></h3>
+                            <p>I am a web developer who has gained experience during his years as a student.
+                                My expertise is to create and website design and many more...</p>
+                            <a href="#contact" class="btn hire-me">Hire Me</a>
+                            <a href="#contact" class="btn download-cv">Download CV</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="../IMG/foto.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- HOME SECTION END -->
+            <!-- ABOUT SECTION START -->
+            <section class="about section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ABOUT SECTION END -->
+
+        </div>
+
+        <!-- MAIN CONTENT END -->
+    </div>
+
+
+   <!-- MAIN CONTAINER START -->
+
+    <!-- JS FILE -->
+   <script src="../js/personalWeb.js"></script> 
 </body>
 </html>
