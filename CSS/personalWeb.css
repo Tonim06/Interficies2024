@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Press+Start+2P&family=Titillium+Web&display=swap');
 
 :root{
-    --bg-black-900: #000000;
+    --bg-black-900: #292828;
     --bg-black-100: #252226;
     --bg-black-50: #565357;
     --text-black-900: #ededf4;
@@ -278,6 +278,7 @@ h3.hello span {
     font-weight: 700;
     font-size: 30px;
     color: var(--text-color-1);
+    text-shadow: 2px 2px 2px #ffc800;
 }
 
 h3.my-profession {
@@ -302,30 +303,12 @@ h3.my-profession {
     position: relative;
 }
 
-.home-img::after {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--text-color-1);
-    border-right: 10px solid var(--text-color-1);
-    right: 20px;
-    bottom: -40px;
-}
-
-.home-img::before {
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--text-color-1);
-    border-left: 10px solid var(--text-color-1);
-    left: -20px;
-    top: -40px;
-}
 
 .home .home-img img {
     margin: auto;
     border-radius: 5px;
     height: 400px;
 }
+
+/* ABOUT ME */
+
