@@ -91,12 +91,14 @@ ul{
 }
 
 .socials{
-    border: 4px solid yellow;
-    border-radius: 50px;
-    border-style: double;
     background-color: #2c2b2c;
     margin-right: auto;
+    margin-top: 20px;
+    border: 4px solid #F8B200;
+    border-radius: 50px;
+    box-shadow: #f0d02e66 -5px 5px, #f0c62e4d -10px 10px, #f0a62e33 -15px 15px, #f0922e1a -20px 20px, #f0af2e0d -25px 25px;
 }
+
 
 .socials i{
     text-align: center;
@@ -109,6 +111,9 @@ ul{
     padding: 10px;
     transition: 0.3s ease;
 }
+
+
+
 
 .fa-instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -313,11 +318,103 @@ h3.my-profession {
 }
 
 
-.home .home-img img {
-    margin: auto;
-    border-radius: 5px;
+.box{
+    position: relative;
+    background: #00000080;
+    width: 400px;
     height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
 }
+
+.box::before{
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    transition: 0.5s;
+    animation: animate1 4s linear infinite;
+}
+
+.box:hover::before{
+    inset: -20px 0px;
+}
+
+@keyframes animate1{
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+     }
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292828;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content-img{
+    position: absolute;
+    inset: 30px;
+    border: 6px solid #070a1c;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% -10px);
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.box:hover .content-img img{
+    opacity: 0;
+}
+
+.content-img h2{
+    position: relative;
+    font-size: 32px;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.content-img h2 span{
+    font-size: 20px;
+}
+
+.content-img a{
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #070a1c;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.content-img a:hover{
+    letter-spacing: 0.2em;
+}
+
 
 /* ABOUT ME */
 .card{
@@ -457,13 +554,11 @@ h3.my-profession {
     font-weight: 500;
     color: #ff3c7b;
     font-size: 15px;
-    border: 2px solid red;
+    border: 2px solid #F8B200;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
 }
-
-
 
 .card .content .data li{
     margin: 25px 55px ;
@@ -541,13 +636,15 @@ h3.my-profession {
 }
 
 .hobbies-container{
-    margin-top: 10px;
-    border: 2px solid #F8B200;
+    margin-top: 25px;
+    border: 4px solid #F8B200;
+    border-radius: 5px;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 500px;
+    box-shadow: #f0d02e66 5px 5px, #f0c62e4d 10px 10px, #f0a62e33 15px 15px, #f0922e1a 20px 20px, #f0af2e0d 25px 25px;
 }
 
 .hobbie{
@@ -557,5 +654,18 @@ h3.my-profession {
     margin-left: 10px;
     padding: 10px;
     width:150px;
+    color: white;
+    margin-top: 10px;
+}
+
+.icon{
+    color: yellow;
+    font-size: 25px;
+}
+
+.hobbie-name{
+    margin-top: 20px;
+    text-shadow: #FC0 1px 0 10px;
+    letter-spacing: 2px;
 }
 
