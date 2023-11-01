@@ -113,8 +113,6 @@ ul{
 }
 
 
-
-
 .fa-instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     color: white;
@@ -279,12 +277,11 @@ ul{
 
 .home .home-info {
     flex: 0 0 60%;
-    max-width: 60%;
 }
 
 h3.hello {
     font-size: 28px;
-    margin: 15px 0;
+    margin: 15px 0px;
 }
 
 h3.hello span {
