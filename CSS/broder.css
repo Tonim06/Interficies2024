@@ -1,111 +1,44 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
-    background: #162052;
+    color: #111;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-}
-
-.box{
-    position: relative;
-    background: rgb(0, 0, 0, 0.5);
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.box::before{
-    content: '';
-    position: absolute;
-    inset: -10px 140px;
-    background: linear-gradient(315deg, #00ccff, #d400d4);
-    transition: 0.5s;
-    animation: animate 4s linear infinite;
-}
-
-.box:hover::before{
-    inset: -20px 0px;
-}
-
-@keyframes animate{
-    0%{
-       transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-     }
-}
-
-.box::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    background: #162052;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.content{
-    position: absolute;
-    inset: 30px;
-    border: 6px solid #070a1c;
-    z-index: 3;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.content img{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: calc(100% -10px);
-    object-fit: cover;
-    transition: 0.5s;
-    pointer-events: none;
-    z-index: 3;
+    height: 100vh;
+    font-size: 5em;
+    background-color: #000;
 }
 
-.box:hover .content img{
-    opacity: 0;
+.logo > span{
+    animation: glow 2s ease-in-out infinite;
 }
 
-.content h2{
-    position: relative;
-    font-size: 32px;
-    color: white;
-    letter-spacing: 2px;
-    text-align: center;
+@keyframes glow{
+    0%,100%{
+        color: #fff;
+        text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
+    }
+    10%,90%{
+        color: #111;
+        text-shadow: none;
+    }
 }
 
-.content h2 span{
-    font-size: 20px;
+.logo > span:nth-child(2){
+    animation-delay: 0.25s ;
 }
-
-.content a{
-    position: relative;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #fff;
-    color: #070a1c;
-    border-radius: 25px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    transition: 0.5s;
+.logo > span:nth-child(3){
+    animation-delay: 0.5s;
 }
-
-.content a:hover{
-    letter-spacing: 0.2em;
+.logo > span:nth-child(4){
+    animation-delay: 0.75s;
 }
-
-
+.logo > span:nth-child(5){
+    animation-delay: 1s;
+}
+.logo > span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.logo > span:nth-child(7){
+    animation-delay: 1.5s;
+}

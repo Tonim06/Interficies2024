@@ -155,43 +155,45 @@ ul{
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
+    border-bottom: 4px solid yellow;
+    border-top: 4px solid yellow;
+    padding: 5px;
 }
 
-.aside .logo a{
-    color: var(--text-black-900);
-    font-weight: 700;
-    padding: 15px 20px;
-    font-size: 30px;
-    letter-spacing: 5px;
-    position: relative;
+.logo > span{
+    animation: glow 2s ease-in-out infinite;
 }
 
-.aside .logo a span{
-    font-family: 'Clicker Scripr', cursive;
-    font-size: 40px;
+@keyframes glow{
+    0%,100%{
+        color: #fff;
+        text-shadow: 0 0 12px yellow, 0 0 50px yellow, 0 0 100px yellow;
+    }
+    10%,90%{
+        color: #111;
+        text-shadow: none;
+    }
 }
 
-.aside .logo a::before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid var(--text-color-1);
-    border-left: 5px solid var(--text-color-1);
-    bottom: 0;
-    left: 0;
+.logo > span:nth-child(2){
+    animation-delay: 0.25s ;
+}
+.logo > span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.logo > span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.logo > span:nth-child(5){
+    animation-delay: 1s;
+}
+.logo > span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.logo > span:nth-child(7){
+    animation-delay: 1.5s;
 }
 
-.aside .logo a::after{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 5px solid var(--text-color-1);
-    border-right: 5px solid var(--text-color-1);
-    top: 0;
-    right: 0;
-}
 
 .aside .nav-toggler {
     height: 40px;
