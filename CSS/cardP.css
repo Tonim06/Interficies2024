@@ -15,7 +15,7 @@ body{
 
 .card-project{
     width: 320px;
-    height: 500px;
+    height: 320px;
     border-radius: 20px;
     overflow: hidden;
     border: 8px solid #fff;
@@ -39,11 +39,12 @@ body{
     backdrop-filter: blur(5px);
     border-radius: 15px;
     color: #fff;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: 2s;
+    text-align: justify;
 }
 
 .card-project:hover .card-body{
@@ -51,7 +52,7 @@ body{
 }
 
 .card-title{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .card-subtitle{
@@ -62,13 +63,13 @@ body{
 .card-info{
     font-size: 16px;
     line-height: 25px;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .card-btn{
     color: #1f3d47;
     background: #8fabba;
-    width: 120px;
+    width: 100px;
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: capitalize;
@@ -76,4 +77,8 @@ body{
     outline: none;
     cursor: pointer;
 
+}
+
+.margin{
+    margin: 15px;
 }
