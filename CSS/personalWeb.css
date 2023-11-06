@@ -671,6 +671,143 @@ h3.my-profession {
 /*SKILLS*/
 .skills{
     flex-direction: column;
+    color: #fff;
+}
+
+.skill-title{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.skill-title span{
+    color: #0ef;
+}
+
+.container-skills{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+.heading{
+    text-decoration: underline;
+    text-align: center;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 30px;
+}
+
+.bar{
+    font-size: 25px;
+}
+
+.technical-bars .bar{
+    margin: 40px 0;
+}
+
+.technical-bars .bar:first-child{
+    margin-top: 0;
+}
+
+.technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animateP 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scale(0);
+    transform-origin: left;
+}
+
+@keyframes animateP{
+    100%{
+        transform: scale(1);
+    }
+}
+
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animateP 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scale(0);
+    transform-origin: left;
+}
+
+.progress-line.lan span{
+    width: 90%;
+}
+
+.progress-line.lan2 span{
+    width: 60%;
+}
+.progress-line.lan3 span{
+    width: 90%;
+}
+
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.progress-line.lan span::after{
+    content: "90%";
+}
+
+.progress-line.lan2 span::after{
+    content: "60%";
+}
+.progress-line.lan3 span::after{
+    content: "90%";
+}
+
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
 }
 
 /*PROJECT*/
@@ -688,6 +825,8 @@ h3.my-profession {
     letter-spacing: 3px;
     font-style: italic;
     padding: 15px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 .contact-container{
   max-width: 960px;
