@@ -726,6 +726,7 @@ h3.my-profession {
     font-size: 17px;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
+    font-style: italic;
 }
 
 .technical-bars .bar .progress-line{
@@ -819,7 +820,6 @@ h3.my-profession {
 }
 
 .radial-bars .radial-bar{
-    width: 50%;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
