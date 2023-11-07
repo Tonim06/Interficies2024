@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Press+Start+2P&family=Titillium+Web&display=swap');
 
 :root{
-    --bg-black-900: #292828;
-    --bg-black-100: #252226;
+    --bg-black-100: #232323;
     --bg-black-50: #565357;
     --text-black-900: #ededf4;
     --text-black-700: #f6f6f7;
-    --text-color-1: #f9f953;
+    --color-1: #F8B200;
+    --color-2: #ffc800;
+    --color-3: #d400d4;
+    --color-4: #00ccff;
+    --color-5: #ff3c7b;
+    --color-6: #f3b15b;
 }
 
 *{
@@ -37,7 +41,7 @@ ul{
 }
 
 .section{
-    background: var(--bg-black-900);
+    background-image: url(https://4kwallpapers.com/images/wallpapers/dark-background-abstract-background-network-3d-background-7680x4320-8324.png);
     min-height: 100vh;
     padding: 0 30px;
     opacity: 1;
@@ -80,13 +84,15 @@ ul{
     border-radius: 40px;
     display: inline-block;
     white-space: nowrap;
-    border: 2px solid yellow;
+    border: 2px solid var(--color-2);
     transition: all 0.3s ease;
     margin-right: 15px;
 }
 
 .btn:hover {
     transform: scale(1.05);
+    background-color: var(--color-2);
+    color: #000;
 }
 
 .socials{
@@ -154,20 +160,21 @@ ul{
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
-    border-bottom: 4px solid yellow;
-    border-top: 4px solid yellow;
+    border-bottom: 4px solid var(--color-2);
+    border-top: 4px solid var(--color-2);
     padding: 5px;
     border-radius: 5px;
 }
 
 .logo > span{
     animation: glow 2s ease-in-out infinite;
+    font-weight: 800;
 }
 
 @keyframes glow{
     0%,100%{
         color: #fff;
-        text-shadow: 0 0 12px yellow, 0 0 50px yellow, 0 0 100px yellow;
+        text-shadow: 0 0 12px var(--color-2), 0 0 50px var(--color-2), 0 0 100px var(--color-2);
     }
     10%,90%{
         color: #111;
@@ -194,7 +201,6 @@ ul{
     animation-delay: 1.5s;
 }
 
-
 .aside .nav-toggler {
     height: 40px;
     width: 45px;
@@ -213,7 +219,7 @@ ul{
 .aside .nav-toggler span {
     height: 2px;
     width: 18px;
-    background: var(--text-color-1);
+    background: var(--color-1);
     display: inline-block;
     position: relative;
 }
@@ -222,7 +228,7 @@ ul{
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--text-color-1);
+    background: var(--color-1);
     position: absolute;
     top: -6px;
     left: 0;
@@ -232,7 +238,7 @@ ul{
     content: '';
     height: 2px;
     width: 18px;
-    background: var(--text-color-1);
+    background: var(--color-1);
     position: absolute;
     top: 6px;
     left: 0;
@@ -251,18 +257,18 @@ ul{
     font-size: 16px;
     font-weight: 600;
     display: block;
-    border-bottom: 1px solid var(--bg-black-50);
+    border-bottom: 2px solid var(--color-6);
     color: var(--text-black-900);
     padding: 5px 15px;
     transition: 0.2s;
 }
 .aside .nav li a:hover{
     transform: translateX(20px);
-    color: #ffc800;
+    color: var(--color-3);
 }
 
 .aside .nav li a.active {
-    color: var(--text-color-1);
+    color: var(--color-2);
     transform: translateX(20px);
 }
 
@@ -277,7 +283,6 @@ ul{
 }
 
 /* HOME */
-
 #home {
     min-height: 100vh;
     color: var(--text-black-900);
@@ -296,7 +301,7 @@ h3.hello span {
     font-family: 'Clicker Script', cursive;
     font-weight: 700;
     font-size: 30px;
-    color: var(--text-color-1);
+    color: var(--color-1);
     text-shadow: 2px 2px 2px #ffc800;
 }
 
@@ -306,7 +311,7 @@ h3.my-profession {
 }
 
 .typing {
-    color: var(--text-color-1);
+    color: var(--color-1);
 }
 
 .home-info p {
@@ -582,23 +587,20 @@ h3.my-profession {
     margin-right: 15px;
 }
 
-/* Estilos para la tarjeta */
 .about-card {
-    float: left; /* Coloca la tarjeta a la izquierda */
-    margin-top: 40px; /* Agrega margen superior para separarla de la sección "Home" */
+    float: left; 
+    margin-top: 40px; 
     padding: 20px;
     box-sizing: border-box;
 }
 
-/* Estilos para el contenido de "About Me" */
 .about-content {
-    float: left; /* Coloca el contenido de "About Me" a la izquierda */
-    margin-top: 20px; /* Agrega margen superior para separarla de la sección "Home" */
+    float: left; 
+    margin-top: 20px; 
     padding: 20px;
     box-sizing: border-box;
 }
 
-/* Limpia el float para evitar problemas de diseño */
 .row::after {
     content: "";
     clear: both;
@@ -684,8 +686,8 @@ h3.my-profession {
     text-align: center;
     font-size: 42px;
     font-weight: 900;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     letter-spacing: 2px;
     font-style: italic;
 }
@@ -697,7 +699,7 @@ h3.my-profession {
 .container-skills{
     justify-content: space-evenly;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .heading{
@@ -711,7 +713,7 @@ h3.my-profession {
 }
 
 .bar{
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .technical-bars .bar{
@@ -817,6 +819,11 @@ h3.my-profession {
 .studies{
     margin-bottom: 25px;
 }
+.studies i{
+    margin-right: 15px;
+    color: #F8B200;
+}
+
 .container2{
     margin-right: 25px;
 }
@@ -942,11 +949,12 @@ h3.my-profession {
 .column-card{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .card-project{
-    width: 320px;
-    height: 320px;
-    border-radius: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 15px;
     overflow: hidden;
     border: 8px solid #fff;
     position: relative;
@@ -973,7 +981,7 @@ h3.my-profession {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 2s;
+    transition: 1s;
     text-align: justify;
 }
 
@@ -982,7 +990,7 @@ h3.my-profession {
 }
 
 .card-title{
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .card-subtitle{
@@ -991,16 +999,16 @@ h3.my-profession {
 }
 
 .card-info{
-    font-size: 16px;
-    line-height: 25px;
-    margin: 20px 0;
+    font-size: 10px;
+    line-height: 15px;
+    margin: 10px 0;
 }
 
 .card-btn{
     color: #1f3d47;
     background: #8fabba;
     width: 100px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     text-transform: capitalize;
     border: none;
