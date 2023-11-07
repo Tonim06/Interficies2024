@@ -688,14 +688,13 @@ h3.my-profession {
 
 .container-skills{
     width: 600px;
-    height: 500px;
+    height: 400px;
     padding: 0px 0px;
-    margin-left: 120px;
+    margin-left: 40px;
 }
 
 .heading{
     text-decoration: underline;
-    text-align: center;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 30px;
@@ -706,7 +705,7 @@ h3.my-profession {
 }
 
 .technical-bars .bar{
-    margin: 40px 0;
+    margin: 10px 0;
 }
 
 .technical-bars .bar:first-child{
@@ -732,7 +731,7 @@ h3.my-profession {
 .technical-bars .bar .progress-line{
     position: relative;
     border-radius: 10px;
-    width: 100%;
+    width: 300px;
     height: 5px;
     background-color: #000;
     animation: animateP 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -757,14 +756,14 @@ h3.my-profession {
 }
 
 .progress-line.lan span{
-    width: 90%;
+    width: 100%;
 }
 
 .progress-line.lan2 span{
-    width: 60%;
+    width: 70%;
 }
 .progress-line.lan3 span{
-    width: 90%;
+    width: 95%;
 }
 
 .progress-line span::after{
@@ -780,14 +779,14 @@ h3.my-profession {
     opacity: 0;
 }
 .progress-line.lan span::after{
-    content: "90%";
+    content: "100%";
 }
 
 .progress-line.lan2 span::after{
-    content: "60%";
+    content: "70%";
 }
 .progress-line.lan3 span::after{
-    content: "90%";
+    content: "95%";
 }
 
 .progress-line span::before{
@@ -859,28 +858,28 @@ h3.my-profession {
 }
 
 .path-1{ animation: animate-path1 1s 1s linear forwards;}
-.path-2{ animation: animate-path1 1s 1s linear forwards;}
-.path-3{ animation: animate-path1 1s 1s linear forwards;}
-.path-4{ animation: animate-path1 1s 1s linear forwards;}
+.path-2{ animation: animate-path2 1s 1s linear forwards;}
+.path-3{ animation: animate-path3 1s 1s linear forwards;}
+.path-4{ animation: animate-path4 1s 1s linear forwards;}
 
 @keyframes animate-path1{
     100%{
-        stroke-dashoffset: 50;
+        stroke-dashoffset: 25;
     }
 }
-@keyframes animate-path12{
+@keyframes animate-path2{
     100%{
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 40;
     }
 }
-@keyframes animate-path1{
+@keyframes animate-path3{
     100%{
         stroke-dashoffset: 125;
     }
 }
-@keyframes animate-path1{
+@keyframes animate-path4{
     100%{
-        stroke-dashoffset: 75;
+        stroke-dashoffset: 145;
     }
 }
 
