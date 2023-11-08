@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Press+Start+2P&family=Titillium+Web&display=swap');
 
 :root{
-    --bg-black-100: #1d1c1c;
+    --bg-black: #1d1c1c;
     --bg-black-50: #606060;
     --text-black-900: #ededf4;
     --text-black-700: #f6f6f7;
@@ -142,7 +142,7 @@ ul{
 /* ASIDE */
 .aside{
     width: 270px;
-    background: var(--bg-black-100);
+    background: var(--bg-black);
     position: fixed;
     left: o;
     top: 0;
@@ -210,7 +210,7 @@ ul{
     left: 300px;
     top: 20px;
     border-radius: 5px;
-    background: var(--bg-black-100);
+    background: var(--bg-black);
     display: none;
     align-items: center;
     justify-content: center;
@@ -404,10 +404,12 @@ h3.my-profession {
     color: white;
     letter-spacing: 2px;
     text-align: center;
+    font-style: italic;
 }
 
 .content-img h2 span{
     font-size: 20px;
+    font-style: italic;
 }
 
 .content-img a{
@@ -563,9 +565,9 @@ h3.my-profession {
 
 .card .content .details span{
     font-weight: 500;
-    color: #ff3c7b;
+    color: #D2B4DE;
     font-size: 15px;
-    border: 2px solid #F8B200;
+    border: 2px solid var(--color-1);
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 20px;
@@ -586,6 +588,7 @@ h3.my-profession {
 
 .card .content .data li a i{
     margin-right: 15px;
+    color: #85C1E9;
 }
 
 .about-card {
@@ -620,6 +623,10 @@ h3.my-profession {
     letter-spacing: 2px;
 }
 
+.section-title span{
+    color: var(--color-1);
+}
+
 .about-text{
     width: 550px;
     color: white;
@@ -641,6 +648,10 @@ h3.my-profession {
     width: 210px;
     padding-bottom: 4px;
     letter-spacing: 2px;
+}
+
+.section-title2 span{
+    color: var(--color-1);
 }
 
 .hobbies-container{
@@ -667,7 +678,7 @@ h3.my-profession {
 }
 
 .icon{
-    color: yellow;
+    color: #85C1E9;
     font-size: 25px;
 }
 
@@ -691,6 +702,9 @@ h3.my-profession {
     padding-bottom: 15px;
     letter-spacing: 2px;
     font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: var(--color-1);
 }
 
 .skill-title span{
@@ -711,6 +725,7 @@ h3.my-profession {
     font-style: italic;
     letter-spacing: 2px;
     text-align: center;
+    color: var(--color-4);
 }
 
 .bar{
@@ -837,6 +852,7 @@ h3.my-profession {
     margin-bottom: 30px;
     font-style: italic;
     letter-spacing: 2px;
+    color: var(--color-4);
 }
 
 @keyframes showText{
@@ -945,6 +961,17 @@ h3.my-profession {
 /*PROJECT*/
 #project{
     flex-direction: column;
+    color: #fff;
+}
+
+.skill-title{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-style: italic;
 }
 
 .column-card{
@@ -1007,8 +1034,8 @@ h3.my-profession {
 }
 
 .card-btn{
-    color: #1f3d47;
-    background: #8fabba;
+    color: #4d5f65;
+    background: var(--color-4);
     width: 100px;
     padding: 5px 10px;
     border-radius: 5px;
@@ -1016,7 +1043,6 @@ h3.my-profession {
     border: none;
     outline: none;
     cursor: pointer;
-
 }
 
 .margin{
@@ -1035,9 +1061,15 @@ h3.my-profession {
     font-weight: 900;
     letter-spacing: 3px;
     font-style: italic;
-    padding: 15px;
+    padding-bottom: 15px;
     text-decoration: underline;
     text-underline-offset: 10px;
+    text-decoration-color: var(--color-1);
+    text-align: center;
+}
+
+.contact-title span{
+    color: var(--color-1);
 }
 .contact-container{
   max-width: 960px;
@@ -1046,8 +1078,8 @@ h3.my-profession {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  background: #363953;
-  box-shadow: 0 0 1rem hsla(0 0 0 /16%);
+  background: var(--bg-black);
+  box-shadow: -5px 5px 10px var(--color-2);
   border-radius: 5px;
   overflow: hidden;
 }
@@ -1060,6 +1092,7 @@ h3.my-profession {
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    letter-spacing: 2px;
 }
 
 .contact-form{
@@ -1072,11 +1105,13 @@ h3.my-profession {
     width: 100%;
     border: none;
     outline: none;
-    background: #2c2f48;
+    background: var(--bg-black);
     color: #fff;
     padding: 10px;
     font-size: 0.9rem;
     border-radius: 5px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--color-2);
 }
 
 .contact-form textarea{
@@ -1087,16 +1122,19 @@ h3.my-profession {
 .contact-form .send-button{
     border: none;
     outline: none;
-    background: #00dbde;
-    font-size: 1rem;
+    border: 2px solid var(--color-2);
+    font-size: 15px;
     font-weight: 500;
-    text-transform: uppercase;
     cursor: pointer;
+    letter-spacing: 2px;
+    width: 150px;
 }
 
 .contact-form .send-button:hover{
-    background: hsl(181, 100%, 44%, 0.8);
+    background: var(--color-2);
     transition: 0.3s all linear;
+    color: var(--bg-black-50);
+    font-weight: 700;
 }
 
 .map iframe{
