@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Press+Start+2P&family=Titillium+Web&display=swap');
 
 :root{
-    --bg-black-100: #232323;
-    --bg-black-50: #565357;
+    --bg-black-100: #1d1c1c;
+    --bg-black-50: #606060;
     --text-black-900: #ededf4;
     --text-black-700: #f6f6f7;
     --color-1: #F8B200;
@@ -258,6 +258,7 @@ ul{
     font-weight: 600;
     display: block;
     border-bottom: 2px solid var(--color-6);
+    border-radius: 1px;
     color: var(--text-black-900);
     padding: 5px 15px;
     transition: 0.2s;
@@ -956,7 +957,8 @@ h3.my-profession {
     height: 220px;
     border-radius: 15px;
     overflow: hidden;
-    border: 8px solid #fff;
+    border: 6px solid #cd8117;
+    box-shadow: 5px 5px 5px var(--color-2);
     position: relative;
 }
 
