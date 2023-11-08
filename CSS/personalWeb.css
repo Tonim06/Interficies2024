@@ -41,7 +41,8 @@ ul{
 }
 
 .section{
-    background-image: url(https://4kwallpapers.com/images/wallpapers/dark-background-abstract-background-network-3d-background-7680x4320-8324.png);
+    background-image: url(../IMG/BaakgroundBlack.png);
+    background-size: cover;
     min-height: 100vh;
     padding: 0 30px;
     opacity: 1;
@@ -201,49 +202,6 @@ ul{
     animation-delay: 1.5s;
 }
 
-.aside .nav-toggler {
-    height: 40px;
-    width: 45px;
-    border: 1px solid var(--bg-black-50);
-    cursor: pointer;
-    position: fixed;
-    left: 300px;
-    top: 20px;
-    border-radius: 5px;
-    background: var(--bg-black);
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.aside .nav-toggler span {
-    height: 2px;
-    width: 18px;
-    background: var(--color-1);
-    display: inline-block;
-    position: relative;
-}
-
-.aside .nav-toggler span::before {
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: var(--color-1);
-    position: absolute;
-    top: -6px;
-    left: 0;
-}
-
-.aside .nav-toggler span::after {
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: var(--color-1);
-    position: absolute;
-    top: 6px;
-    left: 0;
-}
-
 .aside .nav{
     margin-top: 50px;
 }
@@ -256,12 +214,14 @@ ul{
 .aside .nav li a {
     font-size: 16px;
     font-weight: 600;
-    display: block;
+    display: flex;
+    align-items: center;
     border-bottom: 2px solid var(--color-6);
     border-radius: 1px;
     color: var(--text-black-900);
     padding: 5px 15px;
     transition: 0.2s;
+
 }
 .aside .nav li a:hover{
     transform: translateX(20px);
@@ -1140,5 +1100,66 @@ h3.my-profession {
 .map iframe{
     width: 100%;
     height: 100%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    .aside{
+        width: 100vw;
+        background: var(--bg-black);
+        position: absolute;
+        bottom: 0;
+        top: calc(100% - 50px);
+        padding: 0px 30px;
+        height: 50px;
+        border-right: 1px solid var(--bg-black-50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+    
+    .aside .nav li{
+        margin-bottom:0%;
+        display: block;
+    }
+    
+    .aside .nav li a {
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid var(--color-6);
+        color: var(--text-black-900);
+        padding: 0px 10px; 
+    }
+
+    .aside .nav{
+        display: flex;
+        margin-top: 0px;
+    }
+
+    .aside .nav li a p{
+        display: none;
+    }
+
+    .aside .logo{
+        display: none;
+    }
+
+    .aside .nav li a.active{
+        transform: none;
+    }
+
+    .aside .nav li a{
+        border: none;
+    }
+
+    .main-content{
+        display: none;
+        padding: 0;
+    }
+    
 }
 
