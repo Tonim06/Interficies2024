@@ -41,7 +41,7 @@ ul{
 }
 
 .section{
-    background-image: url(../IMG/BaakgroundBlack.png);
+    background-color:#0f0f0f ;
     background-size: cover;
     min-height: 100vh;
     padding: 0 30px;
