@@ -41,7 +41,7 @@ ul{
 }
 
 .section{
-    background-color:#0f0f0f ;
+    background: linear-gradient(109.6deg, #060202 32.4%, #473404 98.8%);
     background-size: cover;
     min-height: 100vh;
     padding: 0 30px;
