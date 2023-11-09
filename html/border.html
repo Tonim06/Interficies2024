@@ -5,45 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>border</title>
+    <script src="https://kit.fontawesome.com/3090488b50.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/broder.css">
 </head>
 <body>
     <div class="card">
-        <div class="rating">
-            <h2><span class="counter" data-target="90">90</span><sup>%</sup><br>HTML</h2>
-            <div class="block"></div>
+        <div class="lines"></div>
+        <div class="imgBx">
+            <img src="../IMG/foto.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="details">
+                <h2>Toni Montero</h2>
+                <span>STUDENT</span>
+                
+                <div class="data">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-calendar-days"></i>June 10,
+                                2002</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i>Palma, Spain</a>
+                        </li>
+                        <li><a href="#"><i
+                                    class="fa-solid fa-envelope"></i>tonifp0610@gmail.com</a>
+                        </li>
+                        <li><a href="#"><i class="fa-solid fa-graduation-cap"></i>Es Liceu,
+                                Marratxi</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <script>
-        const rating = document.getElementsByClassName('rating')[0];
-        const block = document.getElementsByClassName('block');
-
-        for(var i = 1; i < 100; i++){
-            rating.innerHTML += "<div class='block'></div>";
-            block[i].style.transform = "rotate("+ 3.6 * i +"deg)";
-            block[i].style.animationDelay = `${i/40}s`;
-        }
-
-        //360 / 100 = 3.6deg
-        // animar numero
-
-        const counter = document.querySelector('.counter');
-        counter.innerText = 0;
-
-        const target = +counter.getAttribute('data-target');
-
-        const NumberCounter = () => {
-            const value = +counter.innerText;
-            if(value < target){
-                counter.innerText = Math.ceil(value + 1);
-                setTimeout(() => {
-                    NumberCounter()
-                },25)
-            }
-        }
-
-        NumberCounter()
-    </script>
 </body>
 </html>
