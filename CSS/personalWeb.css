@@ -1164,10 +1164,20 @@ h3.my-profession {
     }
 
     /* HOME */
-    .socials{
-        position: absolute;
-        top: 0;
+
+    .home .home-info{
+        text-align: center;
+        width: 650px;
     }
+
+    .home-info p{
+        margin-bottom: 20px;
+    }
+
+    .home .home-img{
+        max-width: none;
+    }
+    
     /* ABOUT */
     .card:hover{
         width: 450px;
