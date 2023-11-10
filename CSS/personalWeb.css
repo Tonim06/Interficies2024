@@ -1278,9 +1278,39 @@ h3.my-profession {
         width: 350px;
     }
 
+    /* SKILLS */
+
+    .skill-title{
+        margin-top: 20px;
+    }
+
     .container-skills{
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .technical-bars{
+        padding: 8px 0px;
+    }
+
+    .container2{
+        margin-bottom: 20px;
+    }
+
+    .radial-bars{
+        text-align: center;
+    }
+
+    .radial-bar{
+        width: 100px;
+        margin-right: 5px;
+    }
+
+    /* PROJECT */
+    .column-card{
+        margin-bottom: 40px;
     }
 
 
