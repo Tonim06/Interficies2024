@@ -1,5 +1,10 @@
 window.addEventListener('load', function() {
-    window.location.href = 'personalWeb.html#home';
+    // Verificar si ya se ha ejecutado
+    if (!localStorage.getItem('hasRunBefore')) {
+        // Si no se ha ejecutado, redirigir y marcar como ejecutado
+        window.location.href = 'personalWeb.html#home';
+        localStorage.setItem('hasRunBefore', true);
+    }
 });
 
 
