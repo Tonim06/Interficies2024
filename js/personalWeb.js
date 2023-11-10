@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
     // Verificar si ya estamos en la página de destino
     if (window.location.hash !== '#home') {
         // Si no estamos en la página de destino, redirigir
-        window.location.href = 'personalweb.html#home';
+        window.location.href = 'personalWeb.html#home';
     }
 });
 
