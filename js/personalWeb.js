@@ -1,5 +1,9 @@
 window.addEventListener('load', function() {
-    window.location.href = 'personalWeb.html#home';
+    // Verificar si ya estamos en la página de destino
+    if (window.location.href.indexOf('personalWeb.html#home') === -1) {
+        // Si no estamos en la página de destino, redirigir
+        window.location.href = 'personalWeb.html#home';
+    }
 });
 
 
