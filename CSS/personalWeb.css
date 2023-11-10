@@ -1269,6 +1269,16 @@ h3.my-profession {
         display: none;
     }
 
+    /* HOME */
+    .home-info p{
+        width: 300px;
+    }
+
+    .box{
+        width: 250px;
+        height: 250px;
+    }
+
     /* ABOUT */
 
     .about-text{
