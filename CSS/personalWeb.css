@@ -945,8 +945,8 @@ h3.my-profession {
     height: 220px;
     border-radius: 15px;
     overflow: hidden;
-    border: 6px solid #cd8117;
-    box-shadow: 5px 5px 5px var(--color-2);
+    border: 6px solid var(--color-3);
+    box-shadow: 5px 5px 5px #00bbf9;
     position: relative;
 }
 
@@ -995,7 +995,8 @@ h3.my-profession {
 }
 
 .card-btn{
-    color: #4d5f65;
+    color: #282828;
+    font-weight: 700;
     background: var(--color-4);
     width: 100px;
     padding: 5px 10px;
