@@ -80,7 +80,7 @@ ul{
 .btn {
     font-size: 16px;
     font-weight: 500;
-    padding: 12px 35px;
+    padding: 10px 30px;
     color: white;
     border-radius: 40px;
     display: inline-block;
@@ -88,6 +88,7 @@ ul{
     border: 2px solid var(--color-2);
     transition: all 0.3s ease;
     margin-right: 15px;
+    letter-spacing: 5px;
 }
 
 .btn:hover {
@@ -802,6 +803,7 @@ h3.my-profession {
 
 .container2{
     margin-right: 25px;
+    margin-top: 20px;
 }
 
 .heading2{
@@ -1117,6 +1119,7 @@ h3.my-profession {
         justify-content: center;
         align-items: center;
         z-index: 10;
+        border-radius: 20px 20px 0px 0px;
     }
     
     .aside .nav li{
@@ -1260,7 +1263,32 @@ h3.my-profession {
 }
 
 @media screen and (max-width: 768px) {
+    .aside .logo{
+        display: none;
+    }
 
-    
+    .container-skills{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /* CONTACT */
+    .contact-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-form{
+        display: block;
+    }
+
+    .form-container h3{
+        text-align: center;
+    }
+
+    .map{
+        width: 100%;
+    }
 }
 
