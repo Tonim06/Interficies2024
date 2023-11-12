@@ -144,7 +144,7 @@ ul{
     width: 270px;
     background: var(--bg-black);
     position: fixed;
-    left: o;
+    left: 0;
     top: 0;
     padding: 30px;
     height: 100%;
@@ -1145,10 +1145,7 @@ h3.my-profession {
     }
 
     .aside .logo{
-        display: block;
-        top: 0;
-        position: fixed;
-        margin-top: 10px;
+        display: none;
     }
 
     .aside .nav li a.active{
@@ -1270,8 +1267,8 @@ h3.my-profession {
     }
 
     /* HOME */
-    .home-info p{
-        width: 300px;
+    .container{
+        padding-bottom: 70px;
     }
 
     .box{
@@ -1307,6 +1304,7 @@ h3.my-profession {
 
     .container2{
         margin-bottom: 20px;
+        margin-left: 20px;
     }
 
     .radial-bars{
@@ -1320,14 +1318,14 @@ h3.my-profession {
 
     /* PROJECT */
     .column-card{
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
-
 
     /* CONTACT */
     .contact-container{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;margin-bottom: 60px;
+
     }
 
     .contact-form{
