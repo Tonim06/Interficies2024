@@ -3,8 +3,8 @@
 :root{
     --bg-black: #1d1c1c;
     --bg-black-50: #606060;
-    --text-black-900: #ededf4;
-    --text-black-700: #f6f6f7;
+    --text-white-900: #ededf4;
+    --text-white-700: #f6f6f7;
     --color-1: #F8B200;
     --color-2: #ffc800;
     --color-3: #d400d4;
@@ -99,7 +99,7 @@ ul{
 .socials{
     background-color: #2c2b2c;
     margin-top: 20px;
-    border: 4px solid #F8B200;
+    border: 4px solid var(--color-1);
     border-radius: 50px;
     box-shadow: #f0d02e66 -5px 5px, #f0c62e4d -10px 10px, #f0a62e33 -15px 15px, #f0922e1a -20px 20px, #f0af2e0d -25px 25px;
 }
@@ -139,7 +139,7 @@ ul{
 }
 
 
-/* ASIDE */
+/* --------------- ASIDE --------------- */
 .aside{
     width: 270px;
     background: var(--bg-black);
@@ -217,7 +217,7 @@ ul{
     align-items: center;
     border-bottom: 2px solid var(--color-6);
     border-radius: 1px;
-    color: var(--text-black-900);
+    color: var(--text-white-900);
     padding: 5px 15px;
     transition: 0.2s;
 
@@ -242,10 +242,10 @@ ul{
     margin-right: 15px;
 }
 
-/* HOME */
+/* --------------- HOME --------------- */
 #home {
     min-height: 100vh;
-    color: var(--text-black-900);
+    color: var(--text-white-900);
 }
 
 .home .home-info {
@@ -262,7 +262,7 @@ h3.hello span {
     font-weight: 700;
     font-size: 30px;
     color: var(--color-1);
-    text-shadow: 2px 2px 2px #ffc800;
+    text-shadow: 2px 2px 2px var(--color-2);
 }
 
 h3.my-profession {
@@ -277,7 +277,7 @@ h3.my-profession {
 .home-info p {
     margin-bottom: 70px;
     font-size: 20px;
-    color: var(--text-black-700);
+    color: var(--text-white-700);
     text-align: justify;
 }
 
@@ -387,7 +387,7 @@ h3.my-profession {
 }
 
 
-/* ABOUT ME */
+/* --------------- ABOUT ME --------------- */
 .card{
     position: relative;
     background: white;
@@ -646,7 +646,7 @@ h3.my-profession {
     letter-spacing: 2px;
 }
 
-/*SKILLS*/
+/* --------------- SKILLS --------------- */
 .skills{
     flex-direction: column;
     color: #fff;
@@ -666,7 +666,7 @@ h3.my-profession {
 }
 
 .skill-title span{
-    color: #F8B200;
+    color: var(--color-1);
 }
 
 .container-skills{
@@ -917,7 +917,7 @@ h3.my-profession {
     opacity: 0;
 }
 
-/*PROJECT*/
+/* --------------- PROJECT --------------- */
 #project{
     flex-direction: column;
     color: #fff;
@@ -1009,7 +1009,7 @@ h3.my-profession {
     margin: 15px;
 }
 
-/*CONTACT ME*/
+/* --------------- CONTACT ME --------------- */
 .contact{
     flex-direction: column;
     justify-content: center;
@@ -1102,7 +1102,7 @@ h3.my-profession {
     height: 100%;
 }
 
-/* RESPONSIVE */
+/* --------------- RESPONSIVE 1024px --------------- */
 
 @media screen and (max-width: 1024px) {
     .aside{
@@ -1131,7 +1131,7 @@ h3.my-profession {
         display: flex;
         align-items: center;
         border-bottom: 2px solid var(--color-6);
-        color: var(--text-black-900);
+        color: var(--text-white-900);
         padding: 0px 10px; 
     }
 
@@ -1160,7 +1160,7 @@ h3.my-profession {
         display: none;
     }
 
-    /* HOME */
+    /* --------------- HOME --------------- */
     .home .home-info{
         text-align: center;
         width: 650px;
@@ -1174,7 +1174,7 @@ h3.my-profession {
         max-width: none;
     }
     
-    /* ABOUT */
+    /* --------------- ABOUT --------------- */
     .about-card{
         margin-bottom: 0px;
         margin-top: 0px;
@@ -1248,7 +1248,7 @@ h3.my-profession {
     }
 
 
-    /* SKILLS */
+    /* --------------- SKILLS --------------- */
     .skill-title{
         margin-top: 80px;
     }
@@ -1273,7 +1273,7 @@ h3.my-profession {
         display: none;
     }
 
-    /* HOME */
+    /* --------------- HOME --------------- */
     .container{
         padding-bottom: 70px;
     }
@@ -1295,7 +1295,7 @@ h3.my-profession {
         margin-top: 8px;
     }
 
-    /* ABOUT */
+    /* --------------- ABOUT --------------- */
     .about-card{
         margin-top: 35px;
     }
@@ -1328,7 +1328,7 @@ h3.my-profession {
     }
 
 
-    /* SKILLS */
+    /* --------------- SKILLS --------------- */
 
     .skill-title{
         margin-top: 20px;
@@ -1359,12 +1359,12 @@ h3.my-profession {
         margin-right: 5px;
     }
 
-    /* PROJECT */
+    /* --------------- PROJECT ---------------- */
     .column-card{
         margin-bottom: 50px;
     }
 
-    /* CONTACT */
+    /* ---------------- CONTACT ---------------- */
     .contact-container{
         display: flex;
         flex-wrap: wrap;margin-bottom: 60px;
