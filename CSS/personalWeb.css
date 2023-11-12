@@ -1107,7 +1107,7 @@ h3.my-profession {
 @media screen and (max-width: 1024px) {
     .aside{
         width: 100vw;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         top: calc(100% - 50px);
         padding: 0px 30px;
@@ -1161,7 +1161,6 @@ h3.my-profession {
     }
 
     /* HOME */
-
     .home .home-info{
         text-align: center;
         width: 650px;
@@ -1176,6 +1175,11 @@ h3.my-profession {
     }
     
     /* ABOUT */
+    .about-card{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
     .card:hover{
         width: 450px;
         height: 250px;
@@ -1233,10 +1237,16 @@ h3.my-profession {
         padding-top: 15px;
     }
 
+    .about-content{
+        margin-top: -20px;
+    }
+
     .hobbies-container{
         width: 550px;
         margin-top: 20px;
+        margin-bottom: 30px;
     }
+
 
     /* SKILLS */
     .skill-title{
@@ -1247,9 +1257,6 @@ h3.my-profession {
         margin-top: 30px;
     }
 
-    .container2{
-        margin-top: 30px;
-    }
 
     .main-content{
         padding: 0;
@@ -1276,14 +1283,50 @@ h3.my-profession {
         height: 250px;
     }
 
-    /* ABOUT */
+    .content-img h2{
+        font-size: 22px;
+    }
 
+    .content-img h2 span{
+        font-size: 18px;
+    }
+    .content-img a{
+        padding: 5px 10px;
+        margin-top: 8px;
+    }
+
+    /* ABOUT */
+    .about-card{
+        margin-top: 35px;
+    }
+    
     .about-text{
         width: 350px;
     }
     .hobbies-container{
-        width: 350px;
+        width: 340px;
     }
+
+    .card .imgBx{
+        left: 50%;
+        top: -50px;
+    }
+
+    .card:hover .imgBx{
+        width: 150px;
+        height: 150px;
+    }
+
+    .card:hover{
+        height: 350px;
+        width: 300px;
+    }
+
+    .hobbie{
+        margin-left: 0px;
+        padding: 5px;
+    }
+
 
     /* SKILLS */
 
